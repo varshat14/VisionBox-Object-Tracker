@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #121212;  /* Dark background */
+    color: #f0f0f0;  /* Light text */
+}
+
+/* Animated Gradient Background */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #333, #444);
+    }
+    50% {
+        background: linear-gradient(45deg, #1f1f1f, #333);
+    }
+    100% {
+        background: linear-gradient(45deg, #333, #444);
+    }
+}
+
+body {
+    animation: gradientAnimation 20s ease infinite;
+}
+
+/* Title Styles */
+h1 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+}
+
+/* Video Container Styles */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Image Styling */
+img {
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Dark shadow */
+}
+
+/* Optional: Create a subtle overlay effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);  /* Dark overlay */
+    z-index: 1;
+}
+
+/* Add some padding and centering for the page */
+.container {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
